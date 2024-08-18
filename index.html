@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plus Final Project</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input
+            type="submit"
+            class="search-form-button"
+            id="search-form-button"
+          />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              <span class="time" id="time">Friday 23:11</span>,
+              <span class="condition" id="condition">clear sky</span>
+              <br />
+              Humidity: <strong class="humidity" id="humidity">50%</strong>,
+              Wind:
+              <strong class="windSpeed" id="windSpeed">5.14km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="icon" id="icon">
+              <img
+                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                alt="weather-app-icon"
+                class="weather-app-icon"
+                id="weather-app-icon"
+              />
+            </div>
+            <div class="weather-app-temperature" id="weather-app-temperature">
+              20
+            </div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="weather-forecast"></div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Veroni02">Linn Nay Chi Hlaing</a>, is
+          <a href="https://github.com/Veroni02/Vanilla-Weather-Search-Homework"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="https://poetic-dodol-82a76f.netlify.app/"
+            >hosted on Nelify</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
